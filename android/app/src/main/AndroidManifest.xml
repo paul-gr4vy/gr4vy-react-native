@@ -21,5 +21,11 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+      <activity
+          android:name=".Gr4vyActivity"
+          android:screenOrientation="portrait">
+      </activity>
+      <meta-data android:name="gr4vy-id" android:value="spider" />
+      <meta-data android:name="gr4vy-environment" android:value="sandbox" />
     </application>
 </manifest>

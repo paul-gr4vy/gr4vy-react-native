@@ -81,7 +81,7 @@ class Gr4vyPayments: NSObject {
               switch event {
               case .transactionFailed(let transactionID, let status, let paymentMethodID):
                 successCallback([[
-                  "success" : false,
+                  "success": false,
                   "transactionId": transactionID,
                   "status": status,
                   "paymentMethodId": paymentMethodID as Any
@@ -89,7 +89,7 @@ class Gr4vyPayments: NSObject {
                 break
               case .transactionCreated(let transactionID, let status, let paymentMethodID):
                 successCallback([[
-                  "success" : true,
+                  "success": true,
                   "transactionId": transactionID,
                   "status": status,
                   "paymentMethodId": paymentMethodID as Any
