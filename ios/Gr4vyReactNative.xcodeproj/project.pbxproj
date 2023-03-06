@@ -14,9 +14,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Gr4vyReactNative-Gr4vyReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Gr4vyReactNative-Gr4vyReactNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		DA67084E29B0A8AC0039096E /* RCTGr4vyPayments.m in Sources */ = {isa = PBXBuildFile; fileRef = DA67084D29B0A8AC0039096E /* RCTGr4vyPayments.m */; };
-		DA67085329B0B1410039096E /* RNGr4vyPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA67085229B0B1410039096E /* RNGr4vyPayments.swift */; };
-		DA67085629B0EBD60039096E /* RNGr4vyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA67085529B0EBD60039096E /* RNGr4vyEvents.swift */; };
+		DA67087529B610370039096E /* RNGr4vyPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA67087229B610370039096E /* RNGr4vyPayments.swift */; };
+		DA67087629B610370039096E /* RNGr4vyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA67087329B610370039096E /* RNGr4vyEvents.swift */; };
+		DA67087729B610370039096E /* RCTGr4vyPayments.m in Sources */ = {isa = PBXBuildFile; fileRef = DA67087429B610370039096E /* RCTGr4vyPayments.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Gr4vyReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Gr4vyReactNative-Gr4vyReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gr4vyReactNative-Gr4vyReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-Gr4vyReactNative-Gr4vyReactNativeTests/Pods-Gr4vyReactNative-Gr4vyReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA67084C29B0A8AB0039096E /* Gr4vyReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gr4vyReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
-		DA67084D29B0A8AC0039096E /* RCTGr4vyPayments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTGr4vyPayments.m; path = Gr4vyReactNative/Gr4vyPayments/RCTGr4vyPayments.m; sourceTree = "<group>"; };
-		DA67085229B0B1410039096E /* RNGr4vyPayments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNGr4vyPayments.swift; path = Gr4vyReactNative/Gr4vyPayments/RNGr4vyPayments.swift; sourceTree = "<group>"; };
-		DA67085529B0EBD60039096E /* RNGr4vyEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RNGr4vyEvents.swift; path = Gr4vyReactNative/Gr4vyPayments/RNGr4vyEvents.swift; sourceTree = "<group>"; };
+		DA67087229B610370039096E /* RNGr4vyPayments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNGr4vyPayments.swift; path = Gr4vyReactNative/RNGr4vyPayments/RNGr4vyPayments.swift; sourceTree = "<group>"; };
+		DA67087329B610370039096E /* RNGr4vyEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNGr4vyEvents.swift; path = Gr4vyReactNative/RNGr4vyPayments/RNGr4vyEvents.swift; sourceTree = "<group>"; };
+		DA67087429B610370039096E /* RCTGr4vyPayments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTGr4vyPayments.m; path = Gr4vyReactNative/RNGr4vyPayments/RCTGr4vyPayments.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -93,7 +93,7 @@
 		13B07FAE1A68108700A75B9A /* Gr4vyReactNative */ = {
 			isa = PBXGroup;
 			children = (
-				DA67084F29B0A8C40039096E /* Gr4vyPayments */,
+				DA67084F29B0A8C40039096E /* RNGr4vyPayments */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -157,14 +157,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DA67084F29B0A8C40039096E /* Gr4vyPayments */ = {
+		DA67084F29B0A8C40039096E /* RNGr4vyPayments */ = {
 			isa = PBXGroup;
 			children = (
-				DA67085229B0B1410039096E /* RNGr4vyPayments.swift */,
-				DA67084D29B0A8AC0039096E /* RCTGr4vyPayments.m */,
-				DA67085529B0EBD60039096E /* RNGr4vyEvents.swift */,
+				DA67087429B610370039096E /* RCTGr4vyPayments.m */,
+				DA67087329B610370039096E /* RNGr4vyEvents.swift */,
+				DA67087229B610370039096E /* RNGr4vyPayments.swift */,
 			);
-			name = Gr4vyPayments;
+			name = RNGr4vyPayments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,9 +433,9 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				DA67084E29B0A8AC0039096E /* RCTGr4vyPayments.m in Sources */,
-				DA67085329B0B1410039096E /* RNGr4vyPayments.swift in Sources */,
-				DA67085629B0EBD60039096E /* RNGr4vyEvents.swift in Sources */,
+				DA67087729B610370039096E /* RCTGr4vyPayments.m in Sources */,
+				DA67087529B610370039096E /* RNGr4vyPayments.swift in Sources */,
+				DA67087629B610370039096E /* RNGr4vyEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
