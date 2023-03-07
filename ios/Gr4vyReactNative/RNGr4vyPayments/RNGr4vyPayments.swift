@@ -8,8 +8,8 @@
 import Foundation
 import gr4vy_ios
 
-@objc(Gr4vyPayments)
-class Gr4vyPayments: NSObject {
+@objc(RNGr4vyPayments)
+class RNGr4vyPayments: NSObject {
   let GR4VY_TRANSACTION_CREATED = "GR4VY_TRANSACTION_CREATED"
   let GR4VY_TRANSACTION_FAILED = "GR4VY_TRANSACTION_FAILED"
   let GR4VY_ERROR = "GR4VY_ERROR"

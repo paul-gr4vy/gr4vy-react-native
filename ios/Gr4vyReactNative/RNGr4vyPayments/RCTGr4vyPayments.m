@@ -1,7 +1,7 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 
-@interface RCT_EXTERN_MODULE(Gr4vyPayments, NSObject)
+@interface RCT_EXTERN_MODULE(RNGr4vyPayments, NSObject)
 
 RCT_EXTERN_METHOD(
   showPaymentSheet:(NSString *)gr4vyId

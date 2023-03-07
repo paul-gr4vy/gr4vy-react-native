@@ -22,7 +22,7 @@
         </intent-filter>
       </activity>
       <activity
-          android:name=".Gr4vyActivity"
+          android:name=".RNGr4vyActivity"
           android:screenOrientation="portrait">
       </activity>
       <meta-data android:name="gr4vy-id" android:value="spider" />

@@ -11,7 +11,6 @@ import com.facebook.react.bridge.WritableMap;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 
 public class RNGr4vyPayments extends ReactContextBaseJavaModule {
     static final String EXTRA_TOKEN = "EXTRA_TOKEN";
@@ -30,13 +29,13 @@ public class RNGr4vyPayments extends ReactContextBaseJavaModule {
             public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {
                 if (requestCode == GR4VY_PAYMENT_SHEET_REQUEST) {
                     if (resultCode == Activity.RESULT_OK) {
-                        String error = data.getStringExtra(Gr4vyActivity.EXTRA_ERROR);
+                        String error = data.getStringExtra(RNGr4vyActivity.EXTRA_ERROR);
 
                         if (error == null) {
-                            boolean success = data.getBooleanExtra(Gr4vyActivity.EXTRA_SUCCESS, false);
-                            String status = data.getStringExtra(Gr4vyActivity.EXTRA_STATUS);
-                            String transactionId = data.getStringExtra(Gr4vyActivity.EXTRA_TRANSACTION_ID);
-                            String paymentMethodId = data.getStringExtra(Gr4vyActivity.EXTRA_PAYMENT_METHOD_ID);
+                            boolean success = data.getBooleanExtra(RNGr4vyActivity.EXTRA_SUCCESS, false);
+                            String status = data.getStringExtra(RNGr4vyActivity.EXTRA_STATUS);
+                            String transactionId = data.getStringExtra(RNGr4vyActivity.EXTRA_TRANSACTION_ID);
+                            String paymentMethodId = data.getStringExtra(RNGr4vyActivity.EXTRA_PAYMENT_METHOD_ID);
 
 
                             WritableMap result = Arguments.createMap();
@@ -62,7 +61,7 @@ public class RNGr4vyPayments extends ReactContextBaseJavaModule {
 
    @Override
     public String getName() {
-        return "Gr4vyPayments";
+        return "RNGr4vyPayments";
     }
 
     @ReactMethod
@@ -76,10 +75,8 @@ public class RNGr4vyPayments extends ReactContextBaseJavaModule {
             String environment,
             Callback errorCallback,
             Callback successCallback) {
-        Log.d("Gr4vy", "showPaymentSheet()");
-
         ReactApplicationContext context = getReactApplicationContext();
-        Intent intent = new Intent(context, Gr4vyActivity.class);
+        Intent intent = new Intent(context, RNGr4vyActivity.class);
 
         this.successCallback = successCallback;
         this.errorCallback = errorCallback;
