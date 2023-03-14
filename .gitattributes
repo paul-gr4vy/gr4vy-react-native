@@ -1,2 +1,4 @@
-android/* linguist-detectable=false
-ios/* linguist-detectable=false
+*.java linguist-detectable=false
+*.swift linguist-detectable=false
+*.tsx linguist-detectable=true
+*.js linguist-detectable=true
